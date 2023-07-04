@@ -12,7 +12,7 @@ const config: ThemeConfig = {
 };
 
 const styles: {
-  global: (props: StyleFunctionProps) => { [name: string]: StyleProps };
+  global: (props: StyleFunctionProps) => { [name: string]: StyleProps | any };
 } = {
   global: (props) => ({
     body: {
@@ -20,7 +20,7 @@ const styles: {
     },
     ".swiper": {
       width: "100%",
-      "overflow-y": "visible !important",
+      overflowY: "visible !important",
     },
     ".swiper-slide": {
       width: "fit-content !important",
