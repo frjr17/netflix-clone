@@ -17,8 +17,9 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import Image from "next/image";
 
-const Links = ["Dashboard", "Projects", "Team"];
+const Links = ["Home", "My List"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -50,18 +51,24 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>Logo</Box>
+            <Image
+              src={"/svg/netflix.svg"}
+              width={75}
+              height={75}
+              alt={"Netflix Logo"}
+            />
+          </HStack>
+          <Flex alignItems={"center"}>
             <HStack
               as={"nav"}
               spacing={4}
               display={{ base: "none", md: "flex" }}
+              marginRight={4}
             >
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
-          </HStack>
-          <Flex alignItems={"center"}>
             <Menu>
               <MenuButton
                 as={Button}
@@ -79,14 +86,12 @@ export default function Navbar() {
               </MenuButton>
               <MenuList background={useColorModeValue("white", "black")}>
                 <MenuItem background={useColorModeValue("white", "black")}>
-                  Link 1
+                  Change Photo
                 </MenuItem>
-                <MenuItem background={useColorModeValue("white", "black")}>
-                  Link 2
-                </MenuItem>
+
                 <MenuDivider />
                 <MenuItem background={useColorModeValue("white", "black")}>
-                  Link 3
+                  Sign Out
                 </MenuItem>
               </MenuList>
             </Menu>
@@ -103,8 +108,6 @@ export default function Navbar() {
           </Box>
         ) : null}
       </Box>
-
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }

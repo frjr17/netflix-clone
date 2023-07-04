@@ -1,0 +1,863 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "ZeeRArqTvrElNc7dIdXQ8Krqf5M",
+    "nextPageToken": "CBkQAA",
+    "regionCode": "PA",
+    "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 25
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "xg_r-0VsJKB3urnGHNev8XaxFzA",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "LU2xo0UOntI"
+        },
+        "snippet": {
+          "publishedAt": "2023-03-13T11:51:46Z",
+          "channelId": "UCluzeDHIowlQHDRBf86ws8Q",
+          "title": "productivity chart HD",
+          "description": "\"Creative Commons Central is a channel dedicated to researching, cataloging, classifying, and publishing royalty-free video and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/LU2xo0UOntI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/LU2xo0UOntI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/LU2xo0UOntI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Creative Commons Central",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-03-13T11:51:46Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "DdpYyGMl5xCHn8l3TvSLjs3-be8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "4MFOBeUCPkw"
+        },
+        "snippet": {
+          "publishedAt": "2022-04-14T14:00:14Z",
+          "channelId": "UCwVQIkAtyZzQSA-OY1rsGig",
+          "title": "Music for Work — Limitless Productivity Playlist",
+          "description": "We're in the era of information overload. There's never enough time to complete all the tasks, and it's impossible to stay focused.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/4MFOBeUCPkw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/4MFOBeUCPkw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/4MFOBeUCPkw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Chill Music Lab",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-04-14T14:00:14Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "TNYEMljE0D45_1yLUQ6iFRCrTck",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "_s-ZZ9J2RDQ"
+        },
+        "snippet": {
+          "publishedAt": "2021-05-22T14:06:30Z",
+          "channelId": "UC0oI44ZUVCqq4meNOOaKPTQ",
+          "title": "The Perfect Productivity Monitor - LG 32” 4K UltraFine Ergo Setup",
+          "description": "The LG UltraFine Ergo Monitor (32UN880) is the best 4K productivity monitor I've owned. A 4K HDR display along with the ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/_s-ZZ9J2RDQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/_s-ZZ9J2RDQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/_s-ZZ9J2RDQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "SpawnPoiint",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-05-22T14:06:30Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "EvRmID3xp4Tz34JyR8Xt_1k_yxY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "XidFrsAO4i4"
+        },
+        "snippet": {
+          "publishedAt": "2022-06-20T16:16:44Z",
+          "channelId": "UCKJgBJcJkc0Q4kZeGIyNTYA",
+          "title": "The BEST PRODUCTIVITY Monitor GUIDE 2022",
+          "description": "Visit https://brilliant.org/ThisIsE/ & sign up for Brilliant for free. The first 200 people to upgrade with this link will get 20% off the ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/XidFrsAO4i4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/XidFrsAO4i4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/XidFrsAO4i4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "ThisIsE",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-06-20T16:16:44Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "QxwW-fN5kYFCfpIELh46QNOpxSQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "C4MpzSMkinw"
+        },
+        "snippet": {
+          "publishedAt": "2020-11-06T18:01:47Z",
+          "channelId": "UCwVQIkAtyZzQSA-OY1rsGig",
+          "title": "Productivity Music — Maximum Efficiency for Creators, Programmers, Designers",
+          "description": "What musical tropes make sci-fi music recognizable? Anyone who's seen a science fiction movie knows the importance of sound ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/C4MpzSMkinw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/C4MpzSMkinw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/C4MpzSMkinw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Chill Music Lab",
+          "liveBroadcastContent": "none",
+          "publishTime": "2020-11-06T18:01:47Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "9nKXKnlaRbE3S-b6jpYKj1sdKuQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "VeCV5Ldce0Y"
+        },
+        "snippet": {
+          "publishedAt": "2021-05-20T22:16:24Z",
+          "channelId": "UCFE0aSiUC6UaB4Jyl3MiAoA",
+          "title": "(HD) Christian Focus Music for Work and Productivity",
+          "description": "There might be times when a task must be completed, or we are finding ourselves less motivated at work, this track is intended for ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/VeCV5Ldce0Y/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/VeCV5Ldce0Y/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/VeCV5Ldce0Y/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Christian Focus Music",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-05-20T22:16:24Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Y0tqxtSpaVirT_PuyrBPMuR9lDo",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "7NVfnG62Vwk"
+        },
+        "snippet": {
+          "publishedAt": "2023-04-18T04:11:39Z",
+          "channelId": "UCP5J9sQZrfBZxJV4VNKB21w",
+          "title": "{FULL} Gutfeld! 4/17/23 FULL HD | TRUMP&#39;S BREAKING NEWS April 17, 2023",
+          "description": "Thanks for Watching Please Like video & Subcribe channel ! Thanks all ▷▷ Watch more Fox News Video: 5PM: The Five ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/7NVfnG62Vwk/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/7NVfnG62Vwk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/7NVfnG62Vwk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Selda Ateş",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-04-18T04:11:39Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "d6UfX2J_azpABwuwe90ke8JIqiM",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "kv-71NH6bQ0"
+        },
+        "snippet": {
+          "publishedAt": "2010-01-18T19:07:33Z",
+          "channelId": "UC7RhnNwCqFAuqNW90PcqvEA",
+          "title": "Microsoft Future Vision on Productivity HD",
+          "description": "A high-res version of the video on YouTube. I found it here: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/kv-71NH6bQ0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/kv-71NH6bQ0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/kv-71NH6bQ0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "treblent",
+          "liveBroadcastContent": "none",
+          "publishTime": "2010-01-18T19:07:33Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "J4Yz_apN0srVvXof1YKmDgKmkfg",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "4pcAuLRff3s"
+        },
+        "snippet": {
+          "publishedAt": "2022-11-10T16:45:00Z",
+          "channelId": "UCYyaQsm2HyneP9CsIOdihBw",
+          "title": "5 ADHD Productivity Apps as Recommended By ADHD Coach",
+          "description": "ADHD Coach Arianna Bradford explores the best ADHD Productivity Apps right now that she recommends for those with ADHD ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/4pcAuLRff3s/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/4pcAuLRff3s/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/4pcAuLRff3s/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Keep Productive ",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-11-10T16:45:00Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "fKQnls__br1KA_VvhXWGM9ZyecA",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "ErZb8p6_VeQ"
+        },
+        "snippet": {
+          "publishedAt": "2023-02-08T15:35:19Z",
+          "channelId": "UCKJgBJcJkc0Q4kZeGIyNTYA",
+          "title": "Productivity Monitor Guide 2023 - UNIQUE Monitors Worth Exploring",
+          "description": "This video is sponsored by LG. This content was created in exchange for compensation and/or free products from LG.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ErZb8p6_VeQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ErZb8p6_VeQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ErZb8p6_VeQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "ThisIsE",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-02-08T15:35:19Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Gf4REmrOxaANznVEe5PI0v-QceI",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "BaW37ngwZRc"
+        },
+        "snippet": {
+          "publishedAt": "2022-10-25T11:58:49Z",
+          "channelId": "UCgFWmwN3vRTNU6cpOExaMYA",
+          "title": "34&quot; Ultrawide Monitor - LG 34WN650-W: Incredible Productivity and Gaming on a Budget!",
+          "description": "This is the LG 34\" UltraWide Full HD Monitor (34WN650-W) and it is one of the best budget ultrawides I've used in my setup for my ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/BaW37ngwZRc/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/BaW37ngwZRc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/BaW37ngwZRc/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "SHELTECH",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-10-25T11:58:49Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "zQN_Fr2s6TOmAri_ixr8btQk8_E",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "vi4IAzaa6e0"
+        },
+        "snippet": {
+          "publishedAt": "2011-03-25T16:57:57Z",
+          "channelId": "UCVQsjfYCQn-fY3r6OOPnpFw",
+          "title": "Microsoft Future of Productivity HD",
+          "description": "(c) 2011 Microsoft Corporation HD version of http://youtube.com/watch?v=BU-TGk5JBT4.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/vi4IAzaa6e0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/vi4IAzaa6e0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/vi4IAzaa6e0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "JnkSpace",
+          "liveBroadcastContent": "none",
+          "publishTime": "2011-03-25T16:57:57Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "wUfQI7lxI9nf_si9B5aP014y7rY",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "JsT3KPYJFl4"
+        },
+        "snippet": {
+          "publishedAt": "2022-01-18T19:00:17Z",
+          "channelId": "UCAnlyKaRztOIS1Gyvn2-O6A",
+          "title": "Avoiding Toxic Productivity Advice for ADHD",
+          "description": "There's a problem with personal productivity. Too many systems are designed to make you look busy rather than actually get work ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/JsT3KPYJFl4/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/JsT3KPYJFl4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/JsT3KPYJFl4/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "ADHD Jesse",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-01-18T19:00:17Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Pk-okxw6abeOGYIyxQU0ncoNQUs",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "5jzAAPccBaU"
+        },
+        "snippet": {
+          "publishedAt": "2012-04-18T01:05:23Z",
+          "channelId": "UCdWiyQdaQE5DLsMi9rGmrqQ",
+          "title": "Microsoft Future Vision 2011 - future of productivity - HD",
+          "description": "Clip courtesy of forward thinking Microsoft Corporation, please visit there website for further infromation: www.microsoft.com.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/5jzAAPccBaU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/5jzAAPccBaU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/5jzAAPccBaU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "haydenriggsnz",
+          "liveBroadcastContent": "none",
+          "publishTime": "2012-04-18T01:05:23Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "DJPqktnb_Fn11j32ZE1-DyQwXuc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "-X8Br8jZwsE"
+        },
+        "snippet": {
+          "publishedAt": "2014-11-05T09:26:19Z",
+          "channelId": "UCZmi7I1XIHwzxPnxoCujEiQ",
+          "title": "Productivity scanning with HD Ultra",
+          "description": "The NEW ScanStation facilitates your large-format workflow and is designed specifically for productivity, powered by new unique ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/-X8Br8jZwsE/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/-X8Br8jZwsE/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/-X8Br8jZwsE/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Contex",
+          "liveBroadcastContent": "none",
+          "publishTime": "2014-11-05T09:26:19Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "8ZvSI23HdbPsMHKYnIPT0mKsZw8",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "yLWKaIIiQeU"
+        },
+        "snippet": {
+          "publishedAt": "2021-06-18T17:24:46Z",
+          "channelId": "UCG9WmS4Ga80JiN9TOhoB3hw",
+          "title": "Amazon Kindle Fire HD 10 Plus Review | Productivity Tablet on a Budget?",
+          "description": "We take a deeper dive into Amazon's new Kindle Fire HD 10 Plus tablet with Microsoft Office. Could this be the budget tablet ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/yLWKaIIiQeU/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/yLWKaIIiQeU/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/yLWKaIIiQeU/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Mike Drops Tech",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-06-18T17:24:46Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "LT3zM1RL1o8Exe653nc1Qxb2DHc",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "0iQWves9GEQ"
+        },
+        "snippet": {
+          "publishedAt": "2021-02-04T02:48:49Z",
+          "channelId": "UCX3t0-CjVDoe06gVf6T4Phg",
+          "title": "FR510E2-HD: 51 TON EXCAVATOR, ROBUST, PRODUCTIVITY",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/0iQWves9GEQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/0iQWves9GEQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/0iQWves9GEQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "LOVOL CONSTRUCTION",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-02-04T02:48:49Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Jz6C1HTJQsa4N3lAjmU_jCaXBXg",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "ryYXb79alAg"
+        },
+        "snippet": {
+          "publishedAt": "2021-01-21T01:08:34Z",
+          "channelId": "UCX3t0-CjVDoe06gVf6T4Phg",
+          "title": "FR510E2-HD: 51 TON EXCAVATOR, ROBUST, PRODUCTIVITY",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ryYXb79alAg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ryYXb79alAg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ryYXb79alAg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "LOVOL CONSTRUCTION",
+          "liveBroadcastContent": "none",
+          "publishTime": "2021-01-21T01:08:34Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "TfwvcOH8o8Sgaofa4lBg-JlYPhI",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "4phBoICuDp0"
+        },
+        "snippet": {
+          "publishedAt": "2023-04-14T00:00:10Z",
+          "channelId": "UCndB5jCF4jqH7cQInu1Eaaw",
+          "title": "Productivity Music - Deep Focus Music for Studying - ADHD Relief - 8K ULTRA HD",
+          "description": "Productivity Music - Deep Focus Music for Studying - ADHD Relief - 8K ULTRA HD This relaxing music for studying, concentration ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/4phBoICuDp0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/4phBoICuDp0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/4phBoICuDp0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Stand By You",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-04-14T00:00:10Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "WDkLSCaoeO3Sjge-G_b_rjYCAJQ",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "xF522RJGT8w"
+        },
+        "snippet": {
+          "publishedAt": "2023-03-06T00:00:07Z",
+          "channelId": "UCndB5jCF4jqH7cQInu1Eaaw",
+          "title": "Concentration Music for Studying - Boost Your Productivity - 4K ULTRA HD",
+          "description": "Concentration Music for Studying - Boost Your Productivity - 4K ULTRA HD This relaxing music for studying, concentration and ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/xF522RJGT8w/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/xF522RJGT8w/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/xF522RJGT8w/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Stand By You",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-03-06T00:00:07Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "2J50f-2W0Dh440lJAYjNqz_Ucko",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "WPtdQpiO1sg"
+        },
+        "snippet": {
+          "publishedAt": "2012-01-20T04:54:37Z",
+          "channelId": "UCxtR_PK-e3QyBXqCxK1r22g",
+          "title": "HD Ultra Series   Productivity   YouTube",
+          "description": "",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/WPtdQpiO1sg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/WPtdQpiO1sg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/WPtdQpiO1sg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "CADD Centre 3D Printers & Wide Format Printers",
+          "liveBroadcastContent": "none",
+          "publishTime": "2012-01-20T04:54:37Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "P1PmYuTHeNLQNeZMe-92OFmhpeE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "NfCoUA9yKdw"
+        },
+        "snippet": {
+          "publishedAt": "2010-02-02T18:38:49Z",
+          "channelId": "UCrBlL05AiHv0RfUtvcpI7Yg",
+          "title": "Worker Productivity FAIL [HD]",
+          "description": "Analista financeiro é flagrado com fotos picantes ao vivo na TV Nossa Ao Vivo ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/NfCoUA9yKdw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/NfCoUA9yKdw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/NfCoUA9yKdw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Mix Comédia",
+          "liveBroadcastContent": "none",
+          "publishTime": "2010-02-02T18:38:49Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "EdwboqJ25uDk482sEQWJRQCXK8g",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "_-DaNsDFv0c"
+        },
+        "snippet": {
+          "publishedAt": "2022-02-09T19:15:31Z",
+          "channelId": "UCRE3NFNtdjR96-H4QG4U1Fg",
+          "title": "Amazon Fire HD 10 Productivity - Ramble review, Ramblview... I guess.",
+          "description": "Patreon: https://www.patreon.com/hexdsl Amazon Wish list: ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/_-DaNsDFv0c/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/_-DaNsDFv0c/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/_-DaNsDFv0c/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Hex DSL",
+          "liveBroadcastContent": "none",
+          "publishTime": "2022-02-09T19:15:31Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "GpfKLmxZtCe5SlXu9VqlggpNUmU",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "rOSE1Mmt8dg"
+        },
+        "snippet": {
+          "publishedAt": "2023-04-16T19:00:30Z",
+          "channelId": "UCTTEZ8KbhMVmPG78-aS7p_A",
+          "title": "AI : HYPER INTELLIGENCE | BEST HD DOCUMENTARY",
+          "description": "AI : HYPER INTELLIGENCE | BEST HD DOCUMENTARY Everyone has heard about Artificial Intelligence (or AI), but very few ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/rOSE1Mmt8dg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/rOSE1Mmt8dg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/rOSE1Mmt8dg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "REVO Movies",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-04-16T19:00:30Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "n-JurVW_sfShivH2tlWWcwwZyhw",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "cKxNIWa9aVI"
+        },
+        "snippet": {
+          "publishedAt": "2023-03-27T15:50:06Z",
+          "channelId": "UCTTbJAmf3WCvreHvNQ9THBA",
+          "title": "Boost Productivity: Tips for Time Management HD 1080 #shorts #productivitytips #motivation #howto",
+          "description": "Do you struggle with productivity during the day? This video provides productivity tips to help you get more done and feel ...",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/cKxNIWa9aVI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/cKxNIWa9aVI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/cKxNIWa9aVI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Music and Nature Scapes",
+          "liveBroadcastContent": "none",
+          "publishTime": "2023-03-27T15:50:06Z"
+        }
+      }
+    ]
+  }
+  

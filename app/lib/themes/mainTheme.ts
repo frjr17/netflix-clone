@@ -18,6 +18,13 @@ const styles: {
     body: {
       background: props.colorMode === "dark" ? "black" : "white",
     },
+    ".swiper": {
+      width: "100%",
+      overflow: "visible !important",
+    },
+    ".swiper-slide": {
+      width: "fit-content !important",
+    },
   }),
 };
 
