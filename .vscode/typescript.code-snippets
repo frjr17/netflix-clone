@@ -1,0 +1,60 @@
+{
+  "stateCreate": {
+    "prefix": "stateCreate",
+    "body": [
+      "import State, { IStateProps } from \"..\";",
+      "import * as forms from \"./forms\";",
+      "import * as functions from \"./functions\";",
+      "",
+      "const initialState = {",
+      "  $2",
+      "};",
+      "",
+      "type TInitialState = typeof initialState;",
+      "type TFunctions = typeof functions;",
+      "type TForms = typeof forms;",
+      "",
+      "const stateProps: IStateProps<TInitialState, TFunctions, TForms> = {",
+      "  forms,",
+      "  functions,",
+      "  initialState,",
+      "};",
+      "",
+      "export const use$1State = new State<TInitialState, TFunctions, TForms>(stateProps).state;"
+    ],
+    "description": "stateCreate"
+  },
+  "newFormStructure": {
+    "prefix": "newFormStructure",
+    "body": [
+      "type $1FormInputs = {",
+      "  $2",
+      "};",
+      "export const $1Form: IForm<$1FormInputs> = {",
+      "  order: [$3],",
+      "  form: {",
+      "    $4",
+      "  },",
+      "};"
+    ],
+    "description": "newFormStructure"
+  },
+  "newFormInput": {
+    "prefix": "newFormInput",
+    "body": [
+      "$1: {",
+      "  label: \"$2\",",
+      "  controlProps: {",
+      "    isRequired: ${3:true},",
+      "  },",
+      "  inputProps: {",
+      "    isRequired: ${3:true},",
+      "    type: \"$4\",",
+      "    name: \"$5\",",
+      "    value: $6,",
+      "  },",
+      "}"
+    ],
+    "description": "newFormInput"
+  }
+}
