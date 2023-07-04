@@ -20,7 +20,7 @@ const styles: {
     },
     ".swiper": {
       width: "100%",
-      overflow: "visible !important",
+      "overflow-y": "visible !important",
     },
     ".swiper-slide": {
       width: "fit-content !important",
