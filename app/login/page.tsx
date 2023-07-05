@@ -9,8 +9,21 @@ import {
   FormLabel,
   LightMode,
 } from "@chakra-ui/react";
+import { useAuthState } from "../lib/state/auth";
+import { ChangeEvent, FormEvent, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+  const authState = useAuthState();
+  const router = useRouter();
+  const loginForm = authState.useForm("loginForm");
+
+  const handleSubmit = async (event: FormEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    await authState.login({ email: loginForm.values.email });
+    router.push("/");
+  };
+
   return (
     <Center backgroundImage={"/images/signin-bg.jpeg"} height={"100vh"}>
       <Center background={"rgba(0,0,0,0.3)"} width={"100vw"} height={"100vh"}>
@@ -20,14 +33,16 @@ export default function Login() {
           height={"350px"}
           padding={7}
           justify={"space-around"}
+          rounded={"md"}
+          as={"form"}
+          onSubmit={handleSubmit}
         >
           <Heading>Sign In</Heading>
-          <FormControl>
-            <FormLabel>Email Adress</FormLabel>
-            <Input />
-          </FormControl>
+          {loginForm.components({ isLoading: authState.isFetching })}
           <LightMode>
-            <Button colorScheme="red">Sign In</Button>
+            <Button colorScheme="red" type="submit">
+              Sign In
+            </Button>
           </LightMode>
         </VStack>
       </Center>

@@ -2,7 +2,10 @@ import State, { IStateProps } from "..";
 import * as forms from "./forms";
 import * as functions from "./functions";
 
-const initialState = {};
+const initialState = {
+  email: "",
+  token: "",
+};
 
 type TInitialState = typeof initialState;
 type TFunctions = typeof functions;
