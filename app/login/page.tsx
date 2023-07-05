@@ -20,8 +20,10 @@ export default function Login() {
 
   const handleSubmit = async (event: FormEvent<HTMLDivElement>) => {
     event.preventDefault();
-    await authState.login({ email: loginForm.values.email });
-    router.push("/");
+    try {
+      await authState.login({ email: loginForm.values.email });
+      router.push("/");
+    } catch (error) {}
   };
 
   return (
@@ -40,7 +42,12 @@ export default function Login() {
           <Heading>Sign In</Heading>
           {loginForm.components({ isLoading: authState.isFetching })}
           <LightMode>
-            <Button colorScheme="red" type="submit">
+            <Button
+              loadingText={""}
+              isLoading={authState.isFetching}
+              colorScheme="red"
+              type="submit"
+            >
               Sign In
             </Button>
           </LightMode>
