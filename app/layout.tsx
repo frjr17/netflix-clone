@@ -15,6 +15,7 @@ export default function RootLayout({
   const authState = useAuthState();
   const router = useRouter();
   const pathname = usePathname();
+
   useEffect(() => {
     authState.verify().then((isLoggedIn) => {
       if (!isLoggedIn) {

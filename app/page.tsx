@@ -5,11 +5,11 @@ import { BsFillPlayFill } from "react-icons/bs";
 import Card from "./components/card";
 import Carousel from "./components/carousel";
 import travelVideos from "./lib/data/travel.json";
+
 export default function Home() {
   return (
     <Box>
       <Navbar />
-      {/* Banner */}
       <VStack
         backgroundImage={"/images/clifford.webp"}
         backgroundSize={"cover"}
@@ -29,10 +29,9 @@ export default function Home() {
           >
             Play
           </Button>
-          <Text>+ Add to My List</Text>
+          <Text cursor={"pointer"}>+ Add to My List</Text>
         </HStack>
       </VStack>
-      {/* Carousels */}
       <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
         <Heading as={"h3"}>Travel</Heading>
         <Carousel
