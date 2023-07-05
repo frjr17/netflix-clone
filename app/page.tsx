@@ -4,7 +4,6 @@ import Navbar from "./components/navbar";
 import { BsFillPlayFill } from "react-icons/bs";
 import Card from "./components/card";
 import Carousel from "./components/carousel";
-import travelVideos from "./lib/data/travel.json";
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
         justify={"center"}
       >
         <Heading>Clifford the Red Dog</Heading>
-        <Text> a very cute and interesting dog</Text>
+        <Text fontStyle={"italic"}> a very cute and interesting dog...</Text>
         <HStack>
           <Button
             background={"white"}
@@ -33,15 +32,9 @@ export default function Home() {
         </HStack>
       </VStack>
       <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
-        <Heading as={"h3"}>Travel</Heading>
-        <Carousel
-          cards={travelVideos.items.map((item) => (
-            <Card
-              key={item.id.videoId}
-              imageUrl={item.snippet.thumbnails.medium.url}
-            />
-          ))}
-        />
+        <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
+          Travel
+        </Heading>
       </VStack>
     </Box>
   );
