@@ -43,3 +43,17 @@ export const verify = async () => {
 
   authState.setState({ isFetching: false });
 };
+
+export async function signOut() {
+  const auth = useAuthState;
+  const user = useUserState;
+  auth.setState({ isFetching: true });
+  try {
+    await magic.user.logout();
+    auth.getState().deleteEverything();
+    user.getState().deleteEverything();
+  } catch (error) {
+    console.log(error);
+  }
+  auth.setState({ isFetching: false });
+}

@@ -18,6 +18,8 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Image from "next/image";
+import { useAuthState } from "../lib/state/auth";
+import { useRouter } from "next/navigation";
 
 const Links = ["Home", "My List"];
 
@@ -30,6 +32,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: "none",
       bg: useColorModeValue("whiteAlpha.200", "whiteAlpha.00"),
     }}
+    fontSize={"sm"}
     href={"#"}
   >
     {children}
@@ -38,7 +41,12 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const authState = useAuthState();
+  const router = useRouter();
+  const signOut = async () => {
+    await authState.signOut();
+    router.push("/login");
+  };
   return (
     <>
       <Box px={4}>
@@ -85,12 +93,19 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList background={useColorModeValue("white", "black")}>
-                <MenuItem background={useColorModeValue("white", "black")}>
+                <MenuItem
+                  background={useColorModeValue("white", "black")}
+                  fontSize={"smaller"}
+                >
                   Change Photo
                 </MenuItem>
 
                 <MenuDivider />
-                <MenuItem background={useColorModeValue("white", "black")}>
+                <MenuItem
+                  onClick={signOut}
+                  background={useColorModeValue("white", "black")}
+                  fontSize={"smaller"}
+                >
                   Sign Out
                 </MenuItem>
               </MenuList>

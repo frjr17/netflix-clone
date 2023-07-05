@@ -17,7 +17,6 @@ export default function RootLayout({
   const pathname = usePathname();
   useEffect(() => {
     authState.verify().then((isLoggedIn) => {
-      console.log(isLoggedIn);
       if (!isLoggedIn) {
         router.push("/login");
       } else {
