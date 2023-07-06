@@ -169,34 +169,50 @@ export const getVideos = async (
   }
 };
 
+type VideoCategory =
+  | "disney"
+  | "productivity"
+  | "travel"
+  | "landscapes"
+  | "popular";
+
 /**
  * Asynchronous function that retrieves all videos from various categories
  * @function
  * @async
- * @returns {Promise<{ [name: string]: VideoObject[] }>} A promise that resolves to an object containing arrays of VideoObject objects for each category
+ * @returns {Promise<{[Category in VideoCategory]: VideoObject[]; }>}
+ * A promise that resolves to an object containing arrays of VideoObject objects for each category
  */
-export const getAllVideos = async () => {
-  const videos: { [name: string]: VideoObject[] } = {};
-  videos.disney = await getVideos(
-    process.env.NODE_ENV === "production"
-      ? "disney trailers HD"
-      : "disneyVideos"
-  );
-  videos.productivity = await getVideos(
-    process.env.NODE_ENV === "production"
-      ? "productivity HD"
-      : "productivityVideos"
-  );
-  videos.travel = await getVideos(
-    process.env.NODE_ENV === "production" ? "travel HD" : "travelVideos"
-  );
-  videos.landscapes = await getVideos(
-    process.env.NODE_ENV === "production" ? "landscapes HD" : "landscapesVideos"
-  );
-  videos.popular = await getVideos(
-    process.env.NODE_ENV === "production" ? "" : "popularVideos",
-    true
-  );
+export const getAllVideos: () => Promise<{
+  [Category in VideoCategory]: VideoObject[];
+}> = async () => {
+  const videos: {
+    [Category in VideoCategory]: VideoObject[];
+  } = {
+    disney: await getVideos(
+      process.env.NODE_ENV === "production"
+        ? "disney trailers HD"
+        : "disneyVideos"
+    ),
+
+    productivity: await getVideos(
+      process.env.NODE_ENV === "production"
+        ? "productivity HD"
+        : "productivityVideos"
+    ),
+    travel: await getVideos(
+      process.env.NODE_ENV === "production" ? "travel HD" : "travelVideos"
+    ),
+    landscapes: await getVideos(
+      process.env.NODE_ENV === "production"
+        ? "landscapes HD"
+        : "landscapesVideos"
+    ),
+    popular: await getVideos(
+      process.env.NODE_ENV === "production" ? "" : "popularVideos",
+      true
+    ),
+  };
 
   return videos;
 };
