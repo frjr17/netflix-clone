@@ -14,5 +14,6 @@ const stateProps: IStateProps<TInitialState, TFunctions, TForms> = {
   initialState,
 };
 
-export const useState = new State<TInitialState, TFunctions, TForms>(stateProps)
-  .state;
+export const useUserState = new State<TInitialState, TFunctions, TForms>(
+  stateProps
+).state;
