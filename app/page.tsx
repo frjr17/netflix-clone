@@ -5,21 +5,11 @@ import Navbar from "./components/navbar";
 import { BsFillPlayFill } from "react-icons/bs";
 import Card from "./components/card";
 import Carousel from "./components/carousel";
-import { VideoObject, getAllVideos } from "./lib/videos";
+import { VideoObject } from "./lib/videos";
 import { useVideosState } from "./lib/state/videos";
 import { useEffect } from "react";
 
-export interface IHomeProps {
-  videos: {
-    disney: VideoObject[];
-    productivity: VideoObject[];
-    travel: VideoObject[];
-    landscapes: VideoObject[];
-    popular: VideoObject[];
-  };
-}
-
-export default function Home(props: IHomeProps) {
+export default function Home() {
   const videosState = useVideosState();
   useEffect(() => {
     videosState.getAll();
