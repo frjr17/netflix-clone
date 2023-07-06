@@ -6,11 +6,10 @@ import {
   FormControl,
   Input,
   Button,
-  FormLabel,
   LightMode,
 } from "@chakra-ui/react";
 import { useAuthState } from "../lib/state/auth";
-import { ChangeEvent, FormEvent, useState } from "react";
+import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Login() {

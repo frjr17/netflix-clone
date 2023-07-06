@@ -1,12 +1,17 @@
 import { useAuthState } from ".";
-import { magic } from "../../magic";
 import { useUserState } from "../user";
+import { Magic } from "magic-sdk";
+
+export const magic = () =>
+  typeof window !== "undefined"
+    ? new Magic(process.env.NEXT_PUBLIC_MAGIC_PUBLIC_KEY as string)
+    : undefined;
 
 export const login = async (props: { email: string }) => {
   const authState = useAuthState;
   authState.setState({ isFetching: true });
   try {
-    const token = await magic.auth.loginWithEmailOTP({
+    const token = await magic()?.auth.loginWithEmailOTP({
       email: props.email,
     });
 
@@ -30,7 +35,7 @@ export const verify = async () => {
 
   authState.setState({ isFetching: true });
   try {
-    const isLoggedIn = await magic.user.isLoggedIn();
+    const isLoggedIn = await magic()?.user.isLoggedIn();
 
     if (!isLoggedIn) {
       authState.getState().deleteEverything();
@@ -49,7 +54,7 @@ export async function signOut() {
   const user = useUserState;
   auth.setState({ isFetching: true });
   try {
-    await magic.user.logout();
+    await magic()?.user.logout();
     auth.getState().deleteEverything();
     user.getState().deleteEverything();
   } catch (error) {
