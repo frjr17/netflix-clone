@@ -1,4 +1,5 @@
 "use client";
+import { VideoObject } from "@/app/lib/videos";
 import { useVideosState } from "@/app/state/videos";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
@@ -18,12 +19,24 @@ import { useParams, useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { renderToString } from "react-dom/server";
 
+export async function generateStaticParams() {
+  const response = await fetch("/api/getVideos");
+  const videos: VideoObject[] = await response.json();
+
+  return videos.map((video) => ({
+    videoId: video.id,
+  }));
+}
+
+export const dynamicParams = true;
+
 export default function Video() {
   const router = useRouter();
   const { videoId } = useParams();
   const videosState = useVideosState();
   const video = videosState.currentVideo;
   const regex = /https?:\/\/[^\s]+/gi;
+
   const months = [
     "Jan",
     "Feb",
