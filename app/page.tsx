@@ -1,6 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-import { Box, Button, HStack, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  HStack,
+  Heading,
+  Skeleton,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import Navbar from "./components/navbar";
 import { BsFillPlayFill } from "react-icons/bs";
 import Card from "./components/card";
@@ -17,35 +25,43 @@ export default function Home() {
   return (
     <Box>
       <Navbar />
-      <VStack
-        backgroundImage={"/images/clifford.webp"}
-        backgroundSize={"cover"}
-        paddingX={4}
-        height={"80vh"}
-        align="start"
-        justify={"center"}
-      >
-        <Heading>Clifford the Red Dog</Heading>
-        <Text fontStyle={"italic"}> a very cute and interesting dog...</Text>
-        <HStack>
-          <Button
-            background={"white"}
-            color={"black"}
-            sx={{ ":hover": { color: "white" } }}
-            leftIcon={<BsFillPlayFill />}
-          >
-            Play
-          </Button>
-          <Text cursor={"pointer"}>+ Add to My List</Text>
-        </HStack>
-      </VStack>
+      <Skeleton isLoaded={videosState.isFetching}>
+        <VStack
+          backgroundImage={"/images/clifford.webp"}
+          backgroundSize={"cover"}
+          paddingX={4}
+          height={"80vh"}
+          align="start"
+          justify={"center"}
+        >
+          <Heading>Clifford the Red Dog</Heading>
+          <Text fontStyle={"italic"}> a very cute and interesting dog...</Text>
+          <HStack>
+            <Button
+              background={"white"}
+              color={"black"}
+              sx={{ ":hover": { color: "white" } }}
+              leftIcon={<BsFillPlayFill />}
+            >
+              Play
+            </Button>
+            <Text cursor={"pointer"}>+ Add to My List</Text>
+          </HStack>
+        </VStack>
+      </Skeleton>
       <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
         <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
           Most Popular
         </Heading>
         <Carousel
           cards={videosState.popular.map((video, i) => (
-            <Card imageUrl={video.imgUrl} key={video.id} />
+            <Skeleton
+              rounded={"md"}
+              isLoaded={videosState.isFetching}
+              key={video.id}
+            >
+              <Card imageUrl={video.imgUrl} />
+            </Skeleton>
           ))}
         />
       </VStack>
@@ -55,7 +71,13 @@ export default function Home() {
         </Heading>
         <Carousel
           cards={videosState.disney.map((video, i) => (
-            <Card imageUrl={video.imgUrl} key={video.id} />
+            <Skeleton
+              rounded={"md"}
+              isLoaded={videosState.isFetching}
+              key={video.id}
+            >
+              <Card imageUrl={video.imgUrl} />
+            </Skeleton>
           ))}
         />
       </VStack>
@@ -65,7 +87,13 @@ export default function Home() {
         </Heading>
         <Carousel
           cards={videosState.travel.map((video, i) => (
-            <Card imageUrl={video.imgUrl} key={video.id} />
+            <Skeleton
+              rounded={"md"}
+              isLoaded={videosState.isFetching}
+              key={video.id}
+            >
+              <Card imageUrl={video.imgUrl} />
+            </Skeleton>
           ))}
         />
       </VStack>
@@ -75,7 +103,13 @@ export default function Home() {
         </Heading>
         <Carousel
           cards={videosState.productivity.map((video, i) => (
-            <Card imageUrl={video.imgUrl} key={video.id} />
+            <Skeleton
+              rounded={"md"}
+              isLoaded={videosState.isFetching}
+              key={video.id}
+            >
+              <Card imageUrl={video.imgUrl} />
+            </Skeleton>
           ))}
         />
       </VStack>
@@ -85,7 +119,13 @@ export default function Home() {
         </Heading>
         <Carousel
           cards={videosState.landscapes.map((video, i) => (
-            <Card imageUrl={video.imgUrl} key={video.id} />
+            <Skeleton
+              rounded={"md"}
+              isLoaded={videosState.isFetching}
+              key={video.id}
+            >
+              <Card imageUrl={video.imgUrl} />
+            </Skeleton>
           ))}
         />
       </VStack>
