@@ -2,7 +2,7 @@
 "use client";
 import { ColorModeScript } from "@chakra-ui/react";
 import { Providers } from "./providers";
-import { mainTheme } from "./lib/themes/mainTheme";
+import { mainTheme } from "./lib/themes/main";
 import { useEffect } from "react";
 import { useAuthState } from "./state/auth";
 import { usePathname, useRouter } from "next/navigation";
