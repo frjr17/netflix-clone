@@ -54,12 +54,12 @@ export const getVideo = async (videoId: string) => {
   const videosState = useVideosState;
   videosState.setState({ isFetching: true });
 
-  const response = await axios<YoutubeVideo>({
+  const response = await fetch(`/api/getVideoById?videoId=${videoId}`, {
     method: "GET",
-    url: "/api/getVideoById",
-    params: { videoId },
+    next: { revalidate: 10 },
   });
-  const videoData = response.data;
+
+  const videoData: YoutubeVideo = await response.json();
 
   const video: VideoProps = {
     title: videoData.snippet.title,
