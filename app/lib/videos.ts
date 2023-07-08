@@ -137,18 +137,18 @@ export const getVideoById = async (videoId: string) => {
  */
 export const getVideos = async (
   searchQuery: keyof typeof devVideos | string,
-  isMostPopular: boolean = false
+  isMostPopular: boolean = false,
+  devSearchQuery: keyof typeof devVideos
 ) => {
+  let videos = devVideos[
+    devSearchQuery as keyof typeof devVideos
+  ] as YoutubeSearchResult; // Initialize the videos variable with data from the local JSON file
   try {
-    let videos = devVideos[
-      searchQuery as keyof typeof devVideos
-    ] as YoutubeSearchResult; // Initialize the videos variable with data from the local JSON file
-
-    if (process.env.NODE_ENV !== "production") {
+    if (process.env.NODE_ENV === "production") {
       // If running in production, fetch data from the YouTube API
       const { data } = await axios.get<YoutubeSearchResult>(
-        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&q=${searchQuery}&key=${API_KEY}&${
-          isMostPopular ? "chart=mostPopular" : ""
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&q=${searchQuery}&key=${API_KEY}${
+          isMostPopular ? "&chart=mostPopular" : ""
         }`
       );
       videos = data;
@@ -159,14 +159,29 @@ export const getVideos = async (
       return {
         title: item.snippet.title,
         description: item.snippet.description,
-        imgUrl: item.snippet.thumbnails.high.url,
+        imgUrl:
+          item.snippet.thumbnails.high.url ||
+          item.snippet.thumbnails.default.url,
         id: item.id.videoId,
       };
     }) as VideoObject[];
   } catch (error) {
     console.error("Something went wrong with video library", error);
-    return []; // If an error occurs, return an empty array
+    videos = devVideos[
+      devSearchQuery as keyof typeof devVideos
+    ] as YoutubeSearchResult; // Initialize the videos variable with data from the local JSON file
   }
+
+  // Map the search result items to a simplified video object
+  return videos.items.map((item: YoutubeSearchResultItem) => {
+    return {
+      title: item.snippet.title,
+      description: item.snippet.description,
+      imgUrl:
+        item.snippet.thumbnails.high.url || item.snippet.thumbnails.default.url,
+      id: item.id.videoId,
+    };
+  });
 };
 
 type VideoCategory =
@@ -189,29 +204,17 @@ export const getAllVideos: () => Promise<{
   const videos: {
     [Category in VideoCategory]: VideoObject[];
   } = {
-    disney: await getVideos(
-      process.env.NODE_ENV === "production"
-        ? "disney trailers HD"
-        : "disneyVideos"
-    ),
+    disney: await getVideos("disney trailers HD", false, "disneyVideos"),
 
     productivity: await getVideos(
-      process.env.NODE_ENV === "production"
-        ? "productivity HD"
-        : "productivityVideos"
+      "productivity HD",
+      false,
+      "productivityVideos"
     ),
-    travel: await getVideos(
-      process.env.NODE_ENV === "production" ? "travel HD" : "travelVideos"
-    ),
-    landscapes: await getVideos(
-      process.env.NODE_ENV === "production"
-        ? "landscapes HD"
-        : "landscapesVideos"
-    ),
-    popular: await getVideos(
-      process.env.NODE_ENV === "production" ? "" : "popularVideos",
-      true
-    ),
+    travel: await getVideos("travel HD", false, "travelVideos"),
+    landscapes: await getVideos("landscapes HD", false, "landscapesVideos"),
+    popular: await getVideos("", true, "popularVideos"),
   };
+
   return videos;
 };
