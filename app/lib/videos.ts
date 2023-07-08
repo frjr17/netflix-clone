@@ -144,7 +144,7 @@ export const getVideos = async (
       searchQuery as keyof typeof devVideos
     ] as YoutubeSearchResult; // Initialize the videos variable with data from the local JSON file
 
-    if (process.env.NODE_ENV === "production") {
+    if (process.env.NODE_ENV !== "production") {
       // If running in production, fetch data from the YouTube API
       const { data } = await axios.get<YoutubeSearchResult>(
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&q=${searchQuery}&key=${API_KEY}&${
@@ -213,6 +213,5 @@ export const getAllVideos: () => Promise<{
       true
     ),
   };
-
   return videos;
 };
