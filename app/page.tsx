@@ -68,7 +68,7 @@ export default function Home() {
               {name}
             </Heading>
             <Carousel
-              cards={videos.map((video, i) => (
+              cards={videos.map((video) => (
                 <Skeleton
                   rounded={"md"}
                   isLoaded={!videosState.isFetching}

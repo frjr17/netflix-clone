@@ -199,11 +199,10 @@ type VideoCategory =
  * A promise that resolves to an object containing arrays of VideoObject objects for each category
  */
 export const getAllVideos: () => Promise<{
+  // eslint-disable-next-line no-unused-vars
   [Category in VideoCategory]: VideoObject[];
 }> = async () => {
-  const videos: {
-    [Category in VideoCategory]: VideoObject[];
-  } = {
+  return {
     disney: await getVideos("disney trailers HD", false, "disneyVideos"),
 
     productivity: await getVideos(
@@ -215,6 +214,4 @@ export const getAllVideos: () => Promise<{
     landscapes: await getVideos("landscapes HD", false, "landscapesVideos"),
     popular: await getVideos("", true, "popularVideos"),
   };
-
-  return videos;
 };

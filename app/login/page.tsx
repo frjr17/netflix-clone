@@ -1,13 +1,5 @@
 "use client";
-import {
-  Center,
-  VStack,
-  Heading,
-  FormControl,
-  Input,
-  Button,
-  LightMode,
-} from "@chakra-ui/react";
+import { Center, VStack, Heading, Button, LightMode } from "@chakra-ui/react";
 import { useAuthState } from "../state/auth";
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";

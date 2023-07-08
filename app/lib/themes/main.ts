@@ -12,6 +12,7 @@ const config: ThemeConfig = {
 };
 
 const styles: {
+  // eslint-disable-next-line no-unused-vars
   global: (props: StyleFunctionProps) => { [name: string]: StyleProps | any };
 } = {
   global: (props) => ({
