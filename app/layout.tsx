@@ -17,15 +17,15 @@ export default function RootLayout({
   const pathname = usePathname();
 
   useEffect(() => {
-    authState.verify().then((isLoggedIn) => {
-      if (!isLoggedIn) {
-        router.push("/login");
-      } else {
-        if (pathname === "/login") {
-          router.push("/");
-        }
-      }
-    });
+    // authState.verify().then((isLoggedIn) => {
+    //   if (!isLoggedIn) {
+    //     router.push("/login");
+    //   } else {
+    //     if (pathname === "/login") {
+    //       router.push("/");
+    //     }
+    //   }
+    // });
   }, []);
 
   return (
