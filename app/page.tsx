@@ -25,7 +25,9 @@ export default function Home() {
   return (
     <Box>
       <Navbar />
-      <Skeleton isLoaded={videosState.isFetching}>
+      <Skeleton
+        isLoaded={!videosState.isFetching && Boolean(videosState.disney.length)}
+      >
         <VStack
           backgroundImage={"/images/clifford.webp"}
           backgroundSize={"cover"}
@@ -57,7 +59,7 @@ export default function Home() {
           cards={videosState.popular.map((video, i) => (
             <Skeleton
               rounded={"md"}
-              isLoaded={videosState.isFetching}
+              isLoaded={!videosState.isFetching}
               key={video.id}
             >
               <Card imageUrl={video.imgUrl} />
@@ -73,7 +75,7 @@ export default function Home() {
           cards={videosState.disney.map((video, i) => (
             <Skeleton
               rounded={"md"}
-              isLoaded={videosState.isFetching}
+              isLoaded={!videosState.isFetching}
               key={video.id}
             >
               <Card imageUrl={video.imgUrl} />
@@ -89,7 +91,7 @@ export default function Home() {
           cards={videosState.travel.map((video, i) => (
             <Skeleton
               rounded={"md"}
-              isLoaded={videosState.isFetching}
+              isLoaded={!videosState.isFetching}
               key={video.id}
             >
               <Card imageUrl={video.imgUrl} />
@@ -105,7 +107,7 @@ export default function Home() {
           cards={videosState.productivity.map((video, i) => (
             <Skeleton
               rounded={"md"}
-              isLoaded={videosState.isFetching}
+              isLoaded={!videosState.isFetching}
               key={video.id}
             >
               <Card imageUrl={video.imgUrl} />
@@ -121,7 +123,7 @@ export default function Home() {
           cards={videosState.landscapes.map((video, i) => (
             <Skeleton
               rounded={"md"}
-              isLoaded={videosState.isFetching}
+              isLoaded={!videosState.isFetching}
               key={video.id}
             >
               <Card imageUrl={video.imgUrl} />

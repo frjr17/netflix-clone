@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useVideosState } from ".";
-import { VideoObject, getAllVideos } from "../../lib/videos";
+import { VideoObject } from "@/app/lib/videos";
 
 type TTest = {
   disney: VideoObject[];
