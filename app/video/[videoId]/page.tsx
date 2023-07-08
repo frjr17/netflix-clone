@@ -23,11 +23,33 @@ export default function Video() {
   const { videoId } = useParams();
   const videosState = useVideosState();
   const video = videosState.currentVideo;
+  const regex = /https?:\/\/[^\s]+/gi;
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const publishTime = () => {
+    const videoDate = new Date(video?.publishTime as string);
+    return `${videoDate.getDay()} ${
+      months[videoDate.getMonth() + 1]
+    }, ${videoDate.getFullYear()}`;
+  };
+
   useEffect(() => {
     videosState.getVideo(videoId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const regex = /https?:\/\/[^\s]+/gi;
 
   /**
    * Replaces links in the video description with Link components.
@@ -50,6 +72,7 @@ export default function Video() {
       );
     }
   );
+
   return (
     <Center alignItems={"start"} marginTop={"70px"} minHeight={"100vh"}>
       <Box
@@ -99,7 +122,7 @@ export default function Video() {
             marginBottom={{ base: 10, md: "none" }}
           >
             <Text fontSize={"sm"} color={"gray"}>
-              {video?.publishTime}
+              Uploaded at {publishTime()}
             </Text>
             <Heading as={"h1"} fontSize={"2xl"} textAlign={"left"}>
               {video?.title}
