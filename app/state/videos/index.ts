@@ -10,12 +10,14 @@ const initialState: {
   landscapes: VideoObject[];
   popular: VideoObject[];
   isFetching: boolean;
+  currentVideo?: functions.VideoProps;
 } = {
   disney: dummyVideos,
   productivity: dummyVideos,
   travel: dummyVideos,
   landscapes: dummyVideos,
   popular: dummyVideos,
+  currentVideo: undefined,
   isFetching: true,
 };
 

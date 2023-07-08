@@ -41,7 +41,7 @@ export const orderAll = (videos: TTest) => {
 @property {string} imgUrl - The URL of the video's image.
 @property {number} viewCount - The number of views of the video.
 */
-interface VideoProps {
+export interface VideoProps {
   title: string;
   publishTime: string;
   description: string;
@@ -69,6 +69,6 @@ export const getVideo = async (videoId: string) => {
     imgUrl: videoData.snippet.thumbnails.high.url,
     viewCount: (videoData.statistics.viewCount || 0) as number,
   };
-  videosState.setState({ isFetching: false });
+  videosState.setState({ currentVideo: video, isFetching: false });
   return video;
 };
