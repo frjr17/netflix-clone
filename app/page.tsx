@@ -6,7 +6,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 import Card from "./components/card";
 import Carousel from "./components/carousel";
 import { VideoObject } from "./lib/videos";
-import { useVideosState } from "./lib/state/videos";
+import { useVideosState } from "./state/videos";
 import { useEffect } from "react";
 
 export default function Home() {

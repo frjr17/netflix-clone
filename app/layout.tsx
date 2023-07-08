@@ -4,7 +4,7 @@ import { ColorModeScript } from "@chakra-ui/react";
 import { Providers } from "./providers";
 import { mainTheme } from "./lib/themes/mainTheme";
 import { useEffect } from "react";
-import { useAuthState } from "./lib/state/auth";
+import { useAuthState } from "./state/auth";
 import { usePathname, useRouter } from "next/navigation";
 
 export default function RootLayout({

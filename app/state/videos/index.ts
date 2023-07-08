@@ -1,5 +1,5 @@
 import State, { IStateProps } from "..";
-import { VideoObject } from "../../videos";
+import { VideoObject } from "../../lib/videos";
 import * as forms from "./forms";
 import * as functions from "./functions";
 

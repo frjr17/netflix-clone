@@ -8,7 +8,7 @@ import {
   Button,
   LightMode,
 } from "@chakra-ui/react";
-import { useAuthState } from "../lib/state/auth";
+import { useAuthState } from "../state/auth";
 import { FormEvent } from "react";
 import { useRouter } from "next/navigation";
 

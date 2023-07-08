@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Image from "next/image";
-import { useAuthState } from "../lib/state/auth";
+import { useAuthState } from "../state/auth";
 import { useRouter } from "next/navigation";
 
 const Links = ["Home", "My List"];
