@@ -21,3 +21,13 @@ export const getAll = async () => {
   videosState.setState({ ...response.data, isFetching: false });
   return response.data;
 };
+
+export const orderAll = (videos: TTest) => {
+  return [
+    ["Most Popular", videos.popular],
+    ["Disney", videos.disney],
+    ["Productivity", videos.productivity],
+    ["Travel", videos.travel],
+    ["Landscapes", videos.landscapes],
+  ];
+};

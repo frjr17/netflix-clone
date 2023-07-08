@@ -16,6 +16,7 @@ import Carousel from "./components/carousel";
 import { VideoObject } from "./lib/videos";
 import { useVideosState } from "./state/videos";
 import { useEffect } from "react";
+import { Link } from "@chakra-ui/next-js";
 
 export default function Home() {
   const videosState = useVideosState();
@@ -51,86 +52,37 @@ export default function Home() {
           </HStack>
         </VStack>
       </Skeleton>
-      <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
-        <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
-          Most Popular
-        </Heading>
-        <Carousel
-          cards={videosState.popular.map((video, i) => (
-            <Skeleton
-              rounded={"md"}
-              isLoaded={!videosState.isFetching}
-              key={video.id}
-            >
-              <Card imageUrl={video.imgUrl} />
-            </Skeleton>
-          ))}
-        />
-      </VStack>
-      <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
-        <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
-          Disney
-        </Heading>
-        <Carousel
-          cards={videosState.disney.map((video, i) => (
-            <Skeleton
-              rounded={"md"}
-              isLoaded={!videosState.isFetching}
-              key={video.id}
-            >
-              <Card imageUrl={video.imgUrl} />
-            </Skeleton>
-          ))}
-        />
-      </VStack>
-      <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
-        <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
-          Travel
-        </Heading>
-        <Carousel
-          cards={videosState.travel.map((video, i) => (
-            <Skeleton
-              rounded={"md"}
-              isLoaded={!videosState.isFetching}
-              key={video.id}
-            >
-              <Card imageUrl={video.imgUrl} />
-            </Skeleton>
-          ))}
-        />
-      </VStack>
-      <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
-        <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
-          Productivity
-        </Heading>
-        <Carousel
-          cards={videosState.productivity.map((video, i) => (
-            <Skeleton
-              rounded={"md"}
-              isLoaded={!videosState.isFetching}
-              key={video.id}
-            >
-              <Card imageUrl={video.imgUrl} />
-            </Skeleton>
-          ))}
-        />
-      </VStack>
-      <VStack spacing={3} align={"start"} paddingX={4} marginY={10}>
-        <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
-          Landscapes
-        </Heading>
-        <Carousel
-          cards={videosState.landscapes.map((video, i) => (
-            <Skeleton
-              rounded={"md"}
-              isLoaded={!videosState.isFetching}
-              key={video.id}
-            >
-              <Card imageUrl={video.imgUrl} />
-            </Skeleton>
-          ))}
-        />
-      </VStack>
+
+      {videosState.orderAll(videosState).map((props) => {
+        const name = props[0] as string;
+        const videos = props[1] as VideoObject[];
+        return (
+          <VStack
+            key={name}
+            spacing={3}
+            align={"start"}
+            paddingX={4}
+            marginY={10}
+          >
+            <Heading as={"h3"} fontSize={"3xl"} fontWeight={500}>
+              {name}
+            </Heading>
+            <Carousel
+              cards={videos.map((video, i) => (
+                <Skeleton
+                  rounded={"md"}
+                  isLoaded={!videosState.isFetching}
+                  key={video.id}
+                >
+                  <Link href={`video/${video.id}`}>
+                    <Card imageUrl={video.imgUrl} />
+                  </Link>
+                </Skeleton>
+              ))}
+            />
+          </VStack>
+        );
+      })}
     </Box>
   );
 }
