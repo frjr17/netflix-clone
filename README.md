@@ -1,12 +1,8 @@
 # Netflix Clone
 
-![Netflix Clone Banner](link_to_your_banner_image)
-
 A Netflix clone project built with [React](https://reactjs.org/) and [Firebase](https://firebase.google.com/). This project aims to replicate the look and feel of the Netflix website and provides similar functionalities.
 
 ## Demo
-
-![Netflix Clone Demo](https://vercel.com/frjr17/netflix-clone)
 
 Check out the live demo [here]([link_to_live_demo](https://vercel.com/frjr17/netflix-clone)).
 
