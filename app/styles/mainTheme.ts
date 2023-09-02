@@ -7,7 +7,7 @@ import {
 const globalStyles: SystemStyleFunction = (props) => ({
   body: {
     background: props.colorMode === "dark" ? "black" : "white",
-    color: props.colorMode === "light" ? "white" : "black",
+    color: props.colorMode === "dark" ? "white" : "black",
   },
 });
 
