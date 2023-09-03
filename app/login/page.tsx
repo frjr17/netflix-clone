@@ -12,8 +12,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+  const router = useRouter();
+
+  const signIn = () => {
+    router.push("/");
+  };
   return (
     <Box backgroundImage={"/images/signin-bg.jpeg"} height={"100vh"}>
       <Center
@@ -48,7 +54,9 @@ export default function Login() {
             </FormHelperText>
           </FormControl>
           <LightMode>
-            <Button colorScheme="red">Sign In</Button>
+            <Button onClick={signIn} colorScheme="red">
+              Sign In
+            </Button>
           </LightMode>
         </VStack>
       </Center>
