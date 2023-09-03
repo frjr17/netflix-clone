@@ -18,6 +18,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Link } from "@chakra-ui/next-js";
 
 interface Props {
   children: React.ReactNode;
@@ -29,8 +30,7 @@ const NavLink = (props: Props) => {
   const { children } = props;
 
   return (
-    <Box
-      as="a"
+    <Link
       px={2}
       py={1}
       rounded={"md"}
@@ -41,7 +41,7 @@ const NavLink = (props: Props) => {
       href={"#"}
     >
       {children}
-    </Box>
+    </Link>
   );
 };
 
