@@ -11,11 +11,27 @@ import {
   LightMode,
   VStack,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function Login() {
   return (
     <Box backgroundImage={"/images/signin-bg.jpeg"} height={"100vh"}>
-      <Center background={"rgba(0,0,0,0.4)"} height={"100%"}>
+      <Center
+        position="relative"
+        background={"rgba(0,0,0,0.4)"}
+        height={"100%"}
+      >
+        <Image
+          src={"/svg/netflix.svg"}
+          width={150}
+          height={200}
+          alt="Netflix Logo"
+          style={{
+            position: "absolute",
+            top: 30,
+            left: 40,
+          }}
+        />
         <VStack
           background={"rgba(0,0,0,0.7)"}
           width={{ base: "90%", md: "400px" }}
