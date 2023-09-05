@@ -42,6 +42,7 @@ export default function Home() {
         </HStack>
       </Center>
       {/* slider one */}
+
       {/* slider two */}
       {/* slider three */}
     </>
