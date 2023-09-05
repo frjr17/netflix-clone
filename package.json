@@ -27,6 +27,7 @@
     "react-dom": "18.2.0",
     "redux": "^4.2.1",
     "redux-saga": "^1.2.3",
+    "swiper": "^10.2.0",
     "typescript": "5.2.2"
   }
 }
